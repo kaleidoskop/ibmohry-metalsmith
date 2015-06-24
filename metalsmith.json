@@ -1,0 +1,25 @@
+{
+  "source": "./src",
+  "metadata": {
+    "title": "IB Mohry Site",
+    "description": "Internetseite für das Ingenieurbüro Mohry."
+  },
+  "plugins": {
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-templates": {
+      "engine": "jade",
+      "directory": "./templates",
+      "pretty": true
+    },
+    "metalsmith-watch": {
+      "paths": {
+        "${source}/**/*": true,
+        "templates/**/*": "**/*.md",
+      },
+      "livereload": true,
+    }
+  }
+}
