@@ -7,6 +7,7 @@
   "plugins": {
     "metalsmith-markdown": {},
     "metalsmith-permalinks": {
+      "relative": false,
       "pattern": ":title"
     },
     "metalsmith-templates": {
@@ -17,9 +18,9 @@
     "metalsmith-watch": {
       "paths": {
         "${source}/**/*": true,
-        "templates/**/*": "**/*.md",
+        "templates/**/*": "**/*.md"
       },
-      "livereload": true,
+      "livereload": true
     }
   }
 }

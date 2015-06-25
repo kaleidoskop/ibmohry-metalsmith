@@ -1,9 +1,22 @@
-doctype html
-html
-  head
-    title= title
-    meta(name='description', content= description)
-    meta(http-equiv="content-type", content="#{contentType}; charset=UTF-8")
-  body
-    h1= title
-    p= description
+extends application
+
+block content
+  // HOME
+  section#home.module-hero.module-parallax.module-fade.module-full-height.bg-dark-50(data-background='assets/images/1280px-Brühl_Leipzig_Baustelle_Panorama.jpg')
+      .hs-caption.container
+        .caption-content
+          .hs-title-size-3.font-alt.m-b-30
+            span.rotate We are contemporary | We are amazing | We are best
+          | &#x9;&#x9;&#x9;&#x9;
+          .hs-title-size-1.font-inc
+            | A wonderful serenity has taken possession of my entire soul, like these
+            br
+            |  sweet mornings of spring which I enjoy with my whole heart
+    // /HOME
+
+
+
+
+
+  h1= title
+  p= description
