@@ -1,22 +1,93 @@
 extends application
 
 block content
-  // HOME
-  section#home.module-hero.module-parallax.module-fade.module-full-height.bg-dark-50(data-background='assets/images/1280px-Brühl_Leipzig_Baustelle_Panorama.jpg')
-      .hs-caption.container
-        .caption-content
-          .hs-title-size-3.font-alt.m-b-30
-            span.rotate We are contemporary | We are amazing | We are best
-          | &#x9;&#x9;&#x9;&#x9;
-          .hs-title-size-1.font-inc
-            | A wonderful serenity has taken possession of my entire soul, like these
-            br
-            |  sweet mornings of spring which I enjoy with my whole heart
-    // /HOME
+  //-Navigation
+  nav.navbar.navbar-custom.navbar-transparent.navbar-fixed-top(role='navigation')
+    include ./partials/_nav
+
+  section#home.module.module-header.bg-dark.bg-dark-50(data-background='assets/images/1280px-Brühl_Leipzig_Baustelle_Panorama.jpg')
+    .hs-caption.container
+      .caption-content
+        .hs-title-size-3.font-alt.m-b-30
+          span.rotate Baustatik | Tragwerksplanung | Sachverständiger
+        .hs-title-size-1.font-inc Willkommen auf der Internetseite des Ingenieurbüro Mohry
+  
+  .wrapper
+    section.module-small
+      .container
+        .row
+          .col-sm-8.col-sm-offset-2
+            h4.font-alt.m-b-0 Leistungen
+            hr.divider-w.m-t-10.m-b-20
+            p
+              | Das Ingenieurbüro Mohry erbringt Leistungen im Bereich der Baustatik und Tragwerksplanung für Gebäude des Hochbaus sowie Sachverständigenleistungen in den Bereichen des Massivbaus (Stahlbeton- und Mauerwerksbau) und des Holzbaus.
+              a(href='/leistungen') Mehr information über unsere Leistungen finden sie hier. 
+
+    section.module-small
+      .container
+        .row
+          .col-sm-8.col-sm-offset-2
+            h4.font-alt.m-b-0 Projekte
+            hr.divider-w.m-t-10.m-b-20
+            p
+              | Wir arbeiten an veschiedensten Projekten - untenstehend ist eine kurze Auswahl. 
+    
+    // PORTFOLIO
+    section.module-small.p-t-20.p-b-60
+      ul#works-grid.works-grid.works-grid-gut.works-grid-3.works-hover-w
+        // PORTFOLIO ITEM
+        li.work-item.illustration.webdesign
+          a(href='portfolio-single-1.html')
+            .work-image
+              img(src='assets/images/work-1.jpg', alt='')
+            .work-caption
+              h3.work-title.font-alt Baustelle
+              .work-descr.font-inc
+                | Hausbau in  Landsberg
+        // /PORTFOLIO ITEM
+        // PORTFOLIO ITEM
+        li.work-item.illustration.webdesign
+          a(href='portfolio-single-1.html')
+            .work-image
+              img(src='assets/images/work-1.jpg', alt='')
+            .work-caption
+              h3.work-title.font-alt Statik
+              .work-descr.font-inc
+                | Statik für Hochbauprojekt
+        // /PORTFOLIO ITEM
+        // PORTFOLIO ITEM
+        li.work-item.illustration.webdesign
+          a(href='portfolio-single-1.html')
+            .work-image
+              img(src='assets/images/work-1.jpg', alt='')
+            .work-caption
+              h3.work-title.font-alt Gutachten
+              .work-descr.font-inc
+                | Sachverständigengutachten in Rahmen eines Streitfalls
+        // /PORTFOLIO ITEM
+      .container
+        // PORTFOLIO FILTER
+        .row
+          .col-sm-12
+            ul#filters.filter.font-inc
+              li
+                a.current.wow.fadeInUp(href='#', data-filter='*') Alle Projekte
+
+    section.module-small
+      .container
+        .row
+          .col-sm-8.col-sm-offset-2
+            h4.font-alt.m-b-0 Zur Person
+            hr.divider-w.m-t-10.m-b-20
+            p Dipl.-Ing. Markus Mohry  
+              ul
+                li Diplomingenieur für Holzbau und Ausbau (FH Rosenheim)  
+                li Diplom-Bauingenieur (FH München) und 
+                li Mitglied der Bayerischen Ingenieurekammer Bau 
 
 
 
 
 
-  h1= title
-  p= description
+
+

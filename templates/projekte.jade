@@ -1,0 +1,40 @@
+extends application
+
+block content
+
+  //-Navigation
+  nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+    include ./partials/_nav
+
+  .wrapper
+
+    section.module.module-header.bg-dark.bg-dark-50(data-background='assets/images/section-7.jpg')
+      .container
+        .row
+          .col-sm-8.col-sm-offset-2
+            h1.module-title.font-alt.align-center Leistungen
+            =contents
+        
+    section.module-small.p-t-20.p-b-60
+      .container
+        //-Portfolio filter
+        .row
+          .col-sm-12
+            ul#filters.filter.font-inc.hidden-xs
+              li 
+                a.current.wow.fadeInUp(data-filter='*' href='#')
+              li 
+                a.current.wow.fadeInUp(data-filter='.baustatik' href='#')
+              li 
+                a.current.wow.fadeInUp(data-filter='.tragwerksplanung' href='#')
+              li 
+                a.current.wow.fadeInUp(data-filter='.sachverständiger' href='#')
+        
+        //-Portfolio list
+        ul
+          each entry in contentful.entries
+            //-Portfolio item
+            li
+              span= entry.data.sys.id
+              span= entry.data.fields.titel
+

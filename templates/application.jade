@@ -31,35 +31,53 @@ html(lang='en')
     div.page-loader
       div.loader Loading...
 
-    //-Navigation
-    nav.navbar.navbar-custom.navbar-transparent.navbar-fixed-top(role='navigation')
-      div.container
-        div.navbar-header
-          button.navbar-toggle(type='button' data-toggle='collapse' data-target='#custom-collapse')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar  
-          a.navbar-brand(href='/') Ingenieurbüro Mohry
-        
-        div.collapse.navbar-collapse#custom-collapse
-    
-          ul.nav.navbar-nav.navbar-right
-    
-            li.dropdown
-              a.dropdown-toggle(href='#' data-toggle='dropdown') Home
-              ul.dropdown-menu
-                li: a(href='index.html') Link 1
-
 
     //-Main page content block
     block content
+
+
+
+    // DIVIDER
+    hr.divider-w
+    // /DIVIDER
+    // CONTACT
+    section.module-small
+      .container
+        .row
+          // CONTENT BOX
+          .col-sm-4
+            .content-box
+              .content-box-icon
+                span.icon-map-pin
+              .content-box-title.font-inc
+                | Lorenz-Oettl-Straße 5 
+                br
+                | 86899 Landsberg 
+          // /CONTENT BOX
+          // CONTENT BOX
+          .col-sm-4
+            .content-box
+              .content-box-icon
+                span.icon-phone
+              .content-box-title.font-inc
+                | T 08191 - 940 690 7
+                br
+                | F 08191 - 940 690 9
+          // /CONTENT BOX
+          // CONTENT BOX
+          .col-sm-4
+            .content-box
+              .content-box-icon
+                span.icon-envelope
+              .content-box-title.font-inc
+                | mail@ibmohry.de
 
     footer.footer
       div.container
         div.row
           div.col-sm-12.text-center
-            p.copyright.font-inc.m-b-0 © 2015
+            p.copyright.font-inc.m-b-0 
+              a(href='/impressum') Impressum
               
 
    

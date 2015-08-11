@@ -2,6 +2,7 @@
   "name": "ibmohry-metalsmith",
   "private": true,
   "dependencies": {
+    "contentful-metalsmith": "^0.1.0",
     "jade": "^1.11.0",
     "metalsmith": "^1.7.0",
     "metalsmith-markdown": "^0.2.1",

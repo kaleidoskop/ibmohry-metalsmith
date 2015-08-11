@@ -2,3 +2,33 @@
 Project: Semantic
 Place here your custom CSS styles
 ------------------------------------------------------------------ */
+
+ 
+
+.navbar-custom .navbar-brand .ibmohry-blue {
+  color: #1f497d;
+}
+
+.navbar-custom .navbar-brand .ibmohry-grey {
+  color: #4a442a;
+}
+
+.navbar-transparent .navbar-brand .ibmohry-blue,
+.navbar-transparent .navbar-brand .ibmohry-grey
+{
+  color: #fff;
+}
+
+
+@media (max-width: 767px) {
+
+  .navbar-transparent .navbar-brand .ibmohry-blue
+  {
+    color: #1f497d;
+  }
+  .navbar-transparent .navbar-brand .ibmohry-grey
+  {
+    color: #4a442a;
+  }
+
+}

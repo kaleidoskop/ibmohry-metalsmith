@@ -10,6 +10,9 @@
       "relative": false,
       "pattern": ":title"
     },
+    "contentful-metalsmith": {
+      "accessToken" : "57520688bf78645fdb7ede485416f9d46ba05301f53a0860b7ab47411a623020"
+    },
     "metalsmith-templates": {
       "engine": "jade",
       "directory": "./templates",
